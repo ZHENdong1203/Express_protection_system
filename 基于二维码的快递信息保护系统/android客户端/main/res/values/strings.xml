@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ExpressQRcode</string>
+    <string name="sign_up_label">注册</string>
+    <string name="log_in_label">登录</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="password_hint">密码</string>
+    <string name="email_hint">用户名</string>
+    <string name="confirm_hint">电话号码</string>
+</resources>

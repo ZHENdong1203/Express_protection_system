@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border = '1'>
+    <tr>
+    <td>标题</td><td>sender</td><td>receiver</td><td>phone</td><td>address</td><td>cargoname</td><td>postmanname</td><td>二维码</td>
+    </tr>
+    {% load static %}
+    {% for i in u %}
+    <tr>
+        <td>cargo</td><td>{{ i.sender }}</td><td>{{ i.receiver }}</td><td>{{ i.phone }}</td><td>{{ i.address }}</td><td>{{ i.cargoname }}</td><td>{{ i.postmanname }}</td>
+    <td><img src="{% static i.cargonum %}" alt="二维码" height=100 width=100 /></td>
+    </tr>
+    {% endfor %}
+</table>
+    <form action="/addcargo/" method="get" accept-charset="utf-8">
+        <table border="1">
+        <tr>
+		<td>sender : <input type="text" name="sender"></td>
+		<td>receiver : <input type="text" name="receiver"></td>
+		<td>phone : <input type="text" name="phone"></td>
+            </tr>
+        <tr>
+		<td>address : <input type="text" name="address"></td>
+		<td>cargoname : <input type="text" name="cargoname"></td>
+		<td>postmanname : <input type="text" name="postmanname"></td>
+        </table>
+		<input type="submit" name="添加">
+	</form>
+</body>
+</html>

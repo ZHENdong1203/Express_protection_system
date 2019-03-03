@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <TextView
+        android:id="@+id/scan_top"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:padding="7dp"
+        android:textSize="20sp"
+        android:textColor="#1296db"
+        android:textStyle="bold"
+        android:text="扫一扫"/>
+
+    <TextView
+        android:text="扫描结果为: "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scanResult"
+        android:textSize="18sp"
+        android:singleLine="false"
+        android:layout_below="@id/scan_top"
+        />
+
+
+    <ImageButton
+        android:id="@+id/scanButton"
+        android:background="@drawable/botton_ripe"
+        android:layout_centerInParent="true"
+        android:src="@drawable/scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        />
+
+</RelativeLayout>
